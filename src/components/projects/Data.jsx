@@ -1,6 +1,7 @@
 import Image1 from "../../assets/tenimparitra.gif";
 import Image2 from "../../assets/tanalahy.gif";
 import Image3 from "../../assets/datalogger.gif";
+import Image4 from "../../assets/jobFinder.gif";
 
 
 export const Data = [
@@ -33,6 +34,20 @@ export const Data = [
         type : "Mobile"
     },
     {
+      id: 4,
+      image: Image4,
+      title: "Sample Login App",
+      description:
+        "Creation of a water pressure and flow value logger with a real-time monitoring web interface.",
+      techno: ["Flutter"],
+      links: {
+        github: "https://github.com/f504",
+        appleStore: "https://appleStore.com/",
+        googlePlay: "https://play.google.com/"
+      },
+      type : "Mobile"
+    },
+    {
       id: 3,
       image: Image3,
       title: "Mi-Mesure",
@@ -46,4 +61,5 @@ export const Data = [
       },
       type : "Web"
     },
+
   ];
