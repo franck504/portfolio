@@ -91,15 +91,6 @@
 }
 
 
-.project__img .Mobile{
-  height: 100%;
-
-}
-
-.project__img .Web{
-  height: auto;
-
-}
 
 img.project__img {
   border: 1px solid grey;
@@ -152,12 +143,14 @@ img.project__img {
 
   .Mobile {
      width: calc(100% - 200px);
+     height: 100%;
   }
 
 .Web {
     width: calc(100% - 40px);
     margin-left: auto;
     margin-block-end: auto;
+    height: auto;
  }
 
   .project__content {
