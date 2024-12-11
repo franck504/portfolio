@@ -24,7 +24,7 @@ export const Data = [
       title: "Tanalahy",
       description:
         "A mobile application for controlling a lighting device for photography. \n INNOVATION through improved user experience and greater precision.",
-      techno: ["Flutter", "Wifi - UDP", "C++ Arduino" , "ESP8266"],
+      techno: ["Flutter", "Wifi - UDP","Plateform Channel KOTLIN", "C++ Arduino" , "ESP8266"],
       links: {
           github: "https://github.com/f504",
           appleStore: "https://appleStore.com/",
