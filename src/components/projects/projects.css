@@ -110,6 +110,16 @@ img.project__img {
 }
 
 
+.Mobile {
+  height: 100%;
+}
+
+.Web {
+
+ height: auto;
+}
+
+
 
 /* Disposition en colonne pour les petits écrans */
 @media screen and (max-width: 768px) {
