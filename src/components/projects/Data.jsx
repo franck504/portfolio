@@ -2,6 +2,7 @@ import Image1 from "../../assets/tenimparitra.gif";
 import Image2 from "../../assets/tanalahy.gif";
 import Image3 from "../../assets/datalogger.gif";
 import Image4 from "../../assets/jobFinder.gif";
+import Image5 from "../../assets/csao.gif";
 
 
 export const Data = [
@@ -34,11 +35,25 @@ export const Data = [
         type : "Mobile"
     },
     {
+      id: 5,
+      image: Image5,
+      title: "CSAO",
+      description:
+        "A weapon management application for the National Gendarmerie, designed for an operational training center for trainees. It allows for the registration and archiving of attendance and absences for all trainees, across all squadrons and platoons.",
+      techno: ["Flutter", "ExpressJS", "MySQL"],
+      links: {
+        github: "https://github.com/f504",
+        appleStore: "https://appleStore.com/",
+        googlePlay: "https://play.google.com/"
+      },
+      type : "Web"
+    },
+    {
       id: 4,
       image: Image4,
       title: "Sample Login App",
       description:
-        "Creation of a water pressure and flow value logger with a real-time monitoring web interface.",
+        "All the interfaces required for managing users of a job search application: account creation, authentication, forgot password.",
       techno: ["Flutter"],
       links: {
         github: "https://github.com/f504",
@@ -61,5 +76,6 @@ export const Data = [
       },
       type : "Web"
     },
+   
 
   ];
