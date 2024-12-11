@@ -35,7 +35,7 @@ const Projects = () => {
                
               </div>
               <div className="project__image">
-                <img src={image} alt={title}  onClick={() => window.open(image, '_blank')} className= { "project__img " +" "+ type }/>
+                <img src={image} alt={title}  onClick={() => window.open(image, '_blank')} className= { "project__img" +" "+ type }/>
               </div>
            
             </div>

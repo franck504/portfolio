@@ -87,10 +87,11 @@
   object-fit: contain;
 }
 
-img {
+img.project__img {
   border: 2px solid grey;
   border-radius: 10px;
 }
+
 
 
 .full_screen_text {
