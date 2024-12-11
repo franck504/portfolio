@@ -46,7 +46,7 @@ export const Data = [
         appleStore: "https://appleStore.com/",
         googlePlay: "https://play.google.com/"
       },
-      type : "Web"
+      type : "Mobile"
     },
     {
       id: 4,
