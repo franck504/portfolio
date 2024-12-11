@@ -15,7 +15,8 @@ export const Data = [
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
-    }
+    },
+    type : "Mobile"
   },
     {
       id: 2,
@@ -28,7 +29,8 @@ export const Data = [
           github: "https://github.com/f504",
           appleStore: "https://appleStore.com/",
           googlePlay: "https://play.google.com/"
-        }
+        },
+        type : "Mobile"
     },
     {
       id: 3,
@@ -41,6 +43,7 @@ export const Data = [
         github: "https://github.com/f504",
         appleStore: "https://appleStore.com/",
         googlePlay: "https://play.google.com/"
-      }
+      },
+      type : "Web"
     },
   ];

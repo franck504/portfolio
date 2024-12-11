@@ -3,7 +3,7 @@
 }
 
 .projects__slider {
-  height: calc(100vh - 180px); /* Ajuste la hauteur en fonction de la hauteur de la navbar */
+  height: calc(100vh - 180px);
   overflow: hidden;
 }
 
@@ -18,18 +18,33 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px transparent;
   margin-right: 6%;
+
 }
+
+/* .project__card .Web{
+  display: flex;
+ flex-direction: column;
+}
+
+.project__card .Mobile{
+  display: flex;
+  flex-direction: row;
+ } */
+
+
+
+
 
 .project__content {
   margin-left: 6%;
   flex: 1;
-  height: 100%; /* Hauteur à 100% */
+  height: 100%; 
   display: flex;
-  flex-direction: column; /* Permet d'organiser les éléments verticalement */
-  justify-content: center; /* Centre les éléments verticalement */
-  align-items: flex-start; /* Aligne les éléments à gauche horizontalement */
-  position: relative; /* Nécessaire pour positionner le bouton en bas */
-  padding-right: 3rem; /* Espace pour éviter que les éléments ne se chevauchent avec le bouton */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  position: relative; 
+  padding-right: 3rem;
 }
 
 
@@ -72,62 +87,61 @@
 }
 
 
-.view-button {
-  position: absolute; /* Position absolue pour être en bas à droite */
-  bottom: 1rem; /* Distance du bas */
-  right: 1rem; /* Distance de la droite */
-  display: flex; /* Alignement horizontal de l'icône et du texte */
-  align-items: center; /* Alignement vertical de l'icône et du texte */
-  padding: 0.5rem 1rem;
-  background-color: #3f4041; /* Couleur de fond du bouton */
-  color: #fff; /* Couleur du texte du bouton */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none; /* Supprime le soulignement éventuel */
-}
-
-.view-button:hover {
-  background-color: #1e1f20; /* Couleur du bouton au survol */
-}
-
-
-.view-fullscreen-icon {
-  margin-right: 0.5rem; /* Espace entre l'icône et le texte */
-  font-size: 1.5rem;
-  color: #fff;
-}
-
 .full_screen_text {
   color: #fff;
   font-size: var(--smaller-font-size);
 }
 
+.ambany {
+  display: none;
+}
 
 
 
 /* Disposition en colonne pour les petits écrans */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .projects__slider {
+    height: inherit;
+    overflow: hidden;
+    width: calc(100%);
+  }
   .project__card {
-    flex-direction: column; /* Change l'orientation des enfants en colonne */
-    justify-content: center; /* Centre les enfants verticalement */
-    align-items: center; /* Aligne les enfants horizontalement */
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
   }
 
-  .project__content,
-  .project__image {
-    width: 100%; /* Chaque section occupe toute la largeur */
-    margin: 0; /* Supprime les marges latérales */
-    text-align: center; /* Centre le texte */
+  .ambony {
+    display: none;
   }
 
-  .project__img {
-    width: 100%; /* Chaque section occupe toute la largeur */
-  }
   .project__content {
-    padding: 1rem 0; /* Ajuste les marges intérieures pour les petits écrans */
-    text-align: center; /* Centre le texte */
+    width: 100%;
+    /* background-color: yellow; */
+  
+  }
+  .project__image {
+    margin: 0;
+    text-align: center; 
+  }
+  .project__image .Mobile{
+   width: calc(100% - 150px);
+  }
+
+  .Mobile {
+     width: calc(100% - 200px);
+  }
+
+.Web {
+    width: calc(100% - 40px);
+    margin-left: auto;
+    margin-block-end: auto;
+ }
+
+  .project__content {
+    padding: 1rem 0;
+    text-align: center; 
   }
 
   .project__title , .project__techno , .project__description {

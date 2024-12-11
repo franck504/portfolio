@@ -22,9 +22,9 @@ const Projects = () => {
         spaceBetween={30}
         slidesPerView={1}
       >
-        {Data.map(({ id, image, title, description, techno }) => (
+        {Data.map(({ id, image, title, description, techno, type }) => (
           <SwiperSlide key={id}>
-            <div className="project__card">
+            <div className={"project__card"} id='carte'>
               
               <div className="project__content">
                 <h3 className="project__title">{title}</h3>
@@ -32,17 +32,12 @@ const Projects = () => {
                 <p className="project__techno">
                   <strong>Techno:</strong> {techno.join(', ')}
                 </p>
-                {/* Button to view in large */}
-                <button
-                  className="view-button"
-                  onClick={() => window.open(image, '_blank')}
-                >
-                  <i  className='uil uil-external-link-alt view-fullscreen-icon '></i> <p className='full_screen_text'>View in fullScreen</p>
-                </button>
+               
               </div>
               <div className="project__image">
-                <img src={image} alt={title} className="project__img" />
+                <img src={image} alt={title}  onClick={() => window.open(image, '_blank')} className= { "project__img " +" "+ type }/>
               </div>
+           
             </div>
           </SwiperSlide>
         ))}
