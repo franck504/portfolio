@@ -28,10 +28,10 @@ const Qualification = () => {
           <div className="qualification__data">
          
             <div>
-              <h3 className="qualification__title"> Méthode Agile SCRUM </h3>
+              <h3 className="qualification__title"> Agile SCRUM Methodology</h3>
               <span className="qualification__subtitle">Formation Continue AP12 - ESTI</span>
               <div className="qualification__calender"> 
-                <i className="uil uil-calender-alt"></i> Novembre 2024 
+                <i className="uil uil-calender-alt"></i> 2024 November 
               </div>
             </div>
             <div>
@@ -48,10 +48,10 @@ const Qualification = () => {
               <span className="qualification__line"></span>
             </div>
             <div>
-              <h3 className="qualification__title">  Licence en Génie Electronique Informatique </h3>
-              <span className="qualification__subtitle">ISSTM - Université de Mahajanga</span>
+              <h3 className="qualification__title">  Bachelor's Degree in Electronic and Computer Engineering</h3>
+              <span className="qualification__subtitle">ISSTM - University of Mahajanga</span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Octobre 2023
+                <i className="uil uil-calender-alt"></i> 2023 October
               </div>
             </div>
 
@@ -63,10 +63,10 @@ const Qualification = () => {
 
 
             <div>
-              <h3 className="qualification__title"> Formation en PITCH et Business Model</h3>
+              <h3 className="qualification__title"> Training in PITCH and Business Model</h3>
               <span className="qualification__subtitle">NextA - Antananarivo</span>
               <div className="qualification__calender"> 
-                <i className="uil uil-calender-alt"></i> Août 2022
+                <i className="uil uil-calender-alt"></i> August 2022
               </div>
             </div>
 
@@ -87,7 +87,7 @@ const Qualification = () => {
               <h3 className="qualification__title"> UX/UI Design</h3>
               <span className="qualification__subtitle">Orange Digital Center</span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Décembre 2021 
+                <i className="uil uil-calender-alt"></i> 2021 December 
               </div>
             </div>
            
@@ -114,10 +114,10 @@ const Qualification = () => {
           <div className="qualification__data">
             <div>
               <h3 className="qualification__title">
-              Hackathon entrepreneuriat</h3>
-              <span className="qualification__subtitle">Ambassade de France : « Ville verte grâce au digital »</span>
+              Entrepreneurship Hackathon</h3>
+              <span className="qualification__subtitle">French Embassy: « Ville verte grâce au digital »</span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Décembre 2021
+                <i className="uil uil-calender-alt"></i> December 2021
               </div>
             </div>
 
@@ -136,8 +136,8 @@ const Qualification = () => {
             </div>
 
             <div>
-              <h3 className="qualification__title">  Hackathon entrepreneuriat</h3>
-              <span className="qualification__subtitle">Ambassade de France : « Bien-être au travail grâce au digital »</span>
+              <h3 className="qualification__title">  Entrepreneurship Hackathon</h3>
+              <span className="qualification__subtitle">French Embassy : « Bien-être au travail grâce au digital »</span>
               <div className="qualification__calender">
                 <i className="uil uil-calender-alt"></i> Août 2022
               </div>
@@ -148,11 +148,10 @@ const Qualification = () => {
           <div className="qualification__data">
             <div>
               <h3 className="qualification__title">
-              Hackathon : 2ème place</h3>
-              <span className="qualification__subtitle">« Conception d’une application mobile réseau social pour
-              monatge photo en temps réel (Flutter-Python)»</span>
+              Hackathon: 2nd Place</h3>
+              <span className="qualification__subtitle">« Design of a Mobile Social Network Application for Real-Time Photo Editing  (Flutter-Python)»</span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Hackathon 1ère édition Mahajanga
+                <i className="uil uil-calender-alt"></i>1st Edition Hackathon, Mahajanga
               </div>
             </div>
             <div>
@@ -171,9 +170,10 @@ const Qualification = () => {
 
             <div>
               <h3 className="qualification__title">Google Developer Group (GDG Mahajanga)</h3>
-              <span className="qualification__subtitle">Membre actif de la communauté</span>
+              <span className="qualification__subtitle">Active Community Member
+              </span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Depuis 2022
+                <i className="uil uil-calender-alt"></i> Since 2022
               </div>
             </div>
             
@@ -182,10 +182,10 @@ const Qualification = () => {
           <div className="qualification__data">
             <div>
               <h3 className="qualification__title">
-              Stage : Développeur Web FullStack</h3>
+              Internship : FullStack Web Developer</h3>
               <span className="qualification__subtitle">React/typescript , MongoDB, NodeJs </span>
               <div className="qualification__calender">
-                <i className="uil uil-calender-alt"></i> Express In Code ( Février-Juin 2023 )
+                <i className="uil uil-calender-alt"></i> Express In Code ( February-June 2023 )
               </div>
             </div>
             <div>

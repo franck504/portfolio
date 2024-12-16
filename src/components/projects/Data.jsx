@@ -1,6 +1,6 @@
 import Image1 from "../../assets/tenimparitra.gif";
 import Image2 from "../../assets/tanalahy.gif";
-import Image3 from "../../assets/datalogger.gif";
+import Image3 from "../../assets/kaly.gif";
 import Image4 from "../../assets/jobFinder.gif";
 import Image5 from "../../assets/csao.gif";
 
@@ -65,16 +65,16 @@ export const Data = [
     {
       id: 3,
       image: Image3,
-      title: "Mi-Mesure",
+      title: "Kaly",
       description:
-        "Creation of a water pressure and flow value logger with a real-time monitoring web interface.",
-      techno: ["ReactJS", "ExpressJS", "RethinkDB" , "C++ Arduino"],
+        "A fast food ordering and purchasing application",
+      techno: ["Flutter", "Firebase"],
       links: {
         github: "https://github.com/f504",
         appleStore: "https://appleStore.com/",
         googlePlay: "https://play.google.com/"
       },
-      type : "Web"
+      type : "Mobile"
     },
    
 
