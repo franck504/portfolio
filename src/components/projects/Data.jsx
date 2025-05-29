@@ -3,10 +3,26 @@ import Image2 from "../../assets/tanalahy.gif";
 import Image3 from "../../assets/kaly.gif";
 import Image4 from "../../assets/jobFinder.gif";
 import Image5 from "../../assets/csao.gif";
-
+import Image6 from "../../assets/diamon.gif";
 
 export const Data = [
+  
+ 
   {
+    id: 6,
+    image: Image6,
+    title: "Diamon",
+    description:
+      "Mobile application and IoT device for diabetic patient monitoring, with automatic injection of insulin and glucagon, featuring intelligent coaching and multi-recipient alert system.",
+    techno: ["Flutter", "ExpressJS", "MongoDb Atlas", "C++ Arduino" , "MQTT" , "Websocket", "Socket.io", "Bluetooth", "ESP32"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
+    },
+    type : "Mobile"
+  },
+   {
     id: 1,
     image: Image1,
     title: "Tenimparitra Malagasy",
