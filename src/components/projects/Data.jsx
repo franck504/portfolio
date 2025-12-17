@@ -12,7 +12,7 @@ export const Data = [
     image: Image7,
     title: "SavEat",
     description:
-      "Application de Gestion de Refrigerateur intelligent avec Intelligence Artificielle , IoT  pour but de lutter contre le gaspillage alimentaire . SavEat propose des recettes selon la date de peremption , des alertes intelligentes, des interactions par reconnaissance vocale , un IHM avancee",
+      "Application de Gestion de Réfrigérateur intelligent avec Intelligence Artificielle, IoT pour but de lutter contre le gaspillage alimentaire. SavEat propose des recettes selon la date de péremption, des alertes intelligentes, des interactions par reconnaissance vocale, une IHM avancée.",
     techno: ["Flutter", "Python", "Speech To Text", "Text To Speech", "LLM", "Ollama", "MQTT", "Websocket", "REST API", "fastAPI", "Flask", "Object recognition", "Raspberry Pi", "Postgresql", "SQLAlchemy", "Pydantic", "Swagger"],
     links: {
       github: "https://github.com/f504",
