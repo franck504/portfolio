@@ -18,13 +18,13 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footer__social">
-                    <a href="https://www.facebook.com/franck.anselme.9" className="footer__social-link" target='_blank'>
+                    <a href="https://www.facebook.com/franck.anselme.9" className="footer__social-link" target='_blank' rel="noopener noreferrer">
                         <i className="bx bxl-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/" className="footer__social-link" target='_blank'>
+                    <a href="https://www.instagram.com/" className="footer__social-link" target='_blank' rel="noopener noreferrer">
                         <i className="bx bxl-instagram"></i>
                     </a>
-                    <a href="https://x.com/Tsinjoniai8836" className="footer__social-link" target='_blank'>
+                    <a href="https://x.com/Tsinjoniai8836" className="footer__social-link" target='_blank' rel="noopener noreferrer">
                         <i className="bx bxl-twitter"></i>
                     </a>
                 </div>
@@ -32,6 +32,6 @@ const Footer = () => {
             </div>
         </footer>
     )
-} 
+}
 
 export default Footer
