@@ -4,25 +4,39 @@ import Image3 from "../../assets/kaly.gif";
 import Image4 from "../../assets/jobFinder.gif";
 import Image5 from "../../assets/csao.gif";
 import Image6 from "../../assets/diamon.gif";
+import Image7 from "../../assets/saveat.gif";
 
 export const Data = [
-  
- 
   {
-    id: 6,
-    image: Image6,
-    title: "Diamon",
+    id: 7,
+    image: Image7,
+    title: "SavEat",
     description:
-      "Mobile application and IoT device for diabetic patient monitoring, with automatic injection of insulin and glucagon, featuring intelligent coaching and multi-recipient alert system.",
-    techno: ["Flutter", "ExpressJS", "MongoDb Atlas", "C++ Arduino" , "MQTT" , "Websocket", "Socket.io", "Bluetooth", "ESP32"],
+      "Application de Gestion de Refrigerateur intelligent avec Intelligence Artificielle , IoT  pour but de lutter contre le gaspillage alimentaire . SavEat propose des recettes selon la date de peremption , des alertes intelligentes, des interactions par reconnaissance vocale , un IHM avancee",
+    techno: ["Flutter", "Python", "Speech To Text", "Text To Speech", "LLM", "Ollama", "MQTT", "Websocket", "REST API", "fastAPI", "Flask", "Object recognition", "Raspberry Pi", "Postgresql", "SQLAlchemy", "Pydantic", "Swagger"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type : "Mobile"
+    type: "Desktop"
   },
-   {
+  {
+
+    id: 6,
+    image: Image6,
+    title: "Diamon",
+    description:
+      "Mobile application and IoT device for diabetic patient monitoring, with automatic injection of insulin and glucagon, featuring intelligent coaching and multi-recipient alert system.",
+    techno: ["Flutter", "ExpressJS", "MongoDb Atlas", "C++ Arduino", "MQTT", "Websocket", "Socket.io", "Bluetooth", "ESP32"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
+    },
+    type: "Mobile"
+  },
+  {
     id: 1,
     image: Image1,
     title: "Tenimparitra Malagasy",
@@ -34,64 +48,64 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type : "Mobile"
+    type: "Mobile"
   },
-    {
-      id: 2,
-      image: Image2,
-      title: "Tanalahy",
-      description:
-        "A mobile application for controlling a lighting device for photography. \n INNOVATION through improved user experience and greater precision.",
-      techno: ["Flutter", "Wifi - UDP","Plateform Channel KOTLIN", "C++ Arduino" , "ESP8266"],
-      links: {
-          github: "https://github.com/f504",
-          appleStore: "https://appleStore.com/",
-          googlePlay: "https://play.google.com/"
-        },
-        type : "Mobile"
+  {
+    id: 2,
+    image: Image2,
+    title: "Tanalahy",
+    description:
+      "A mobile application for controlling a lighting device for photography. \n INNOVATION through improved user experience and greater precision.",
+    techno: ["Flutter", "Wifi - UDP", "Plateform Channel KOTLIN", "C++ Arduino", "ESP8266"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
     },
-    {
-      id: 5,
-      image: Image5,
-      title: "CSAO",
-      description:
-        "A weapon management application for the National Gendarmerie, designed for an operational training center for trainees. It allows for the registration and archiving of attendance and absences for all trainees, across all squadrons and platoons.",
-      techno: ["Flutter", "ExpressJS", "MySQL"],
-      links: {
-        github: "https://github.com/f504",
-        appleStore: "https://appleStore.com/",
-        googlePlay: "https://play.google.com/"
-      },
-      type : "Mobile"
+    type: "Mobile"
+  },
+  {
+    id: 5,
+    image: Image5,
+    title: "CSAO",
+    description:
+      "A weapon management application for the National Gendarmerie, designed for an operational training center for trainees. It allows for the registration and archiving of attendance and absences for all trainees, across all squadrons and platoons.",
+    techno: ["Flutter", "ExpressJS", "MySQL"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
     },
-    {
-      id: 4,
-      image: Image4,
-      title: "Sample Login App",
-      description:
-        "All the interfaces required for managing users of a job search application: account creation, authentication, forgot password.",
-      techno: ["Flutter"],
-      links: {
-        github: "https://github.com/f504",
-        appleStore: "https://appleStore.com/",
-        googlePlay: "https://play.google.com/"
-      },
-      type : "Mobile"
+    type: "Mobile"
+  },
+  {
+    id: 4,
+    image: Image4,
+    title: "Sample Login App",
+    description:
+      "All the interfaces required for managing users of a job search application: account creation, authentication, forgot password.",
+    techno: ["Flutter"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
     },
-    {
-      id: 3,
-      image: Image3,
-      title: "Kaly",
-      description:
-        "A fast food ordering and purchasing application",
-      techno: ["Flutter", "Firebase"],
-      links: {
-        github: "https://github.com/f504",
-        appleStore: "https://appleStore.com/",
-        googlePlay: "https://play.google.com/"
-      },
-      type : "Mobile"
+    type: "Mobile"
+  },
+  {
+    id: 3,
+    image: Image3,
+    title: "Kaly",
+    description:
+      "A fast food ordering and purchasing application",
+    techno: ["Flutter", "Firebase"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
     },
-   
+    type: "Mobile"
+  },
 
-  ];
+
+];

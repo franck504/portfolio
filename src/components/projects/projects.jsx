@@ -24,20 +24,36 @@ const Projects = () => {
       >
         {Data.map(({ id, image, title, description, techno, type }) => (
           <SwiperSlide key={id}>
-            <div className={"project__card"} id='carte'>
-              
+            <div className="project__card" id='carte'>
+
               <div className="project__content">
-                <h3 className="project__title">{title}</h3>
+                <div className="project__header">
+                  <h3 className="project__title">{title}</h3>
+                  <span className="project__type">{type}</span>
+                </div>
                 <p className="project__description">{description}</p>
-                <p className="project__techno">
-                  <strong>Techno:</strong> {techno.join(', ')}
-                </p>
-               
+
+                <div className="project__techno">
+                  <strong>Technologies</strong>
+                  <div className="techno__container">
+                    {techno.map((tech, index) => (
+                      <span key={index} className="techno__badge">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
+
               <div className="project__image">
-                <img src={image} alt={title}  onClick={() => window.open(image, '_blank')} className= { "project__img " +" "+ type }/>
+                <img
+                  src={image}
+                  alt={title}
+                  onClick={() => window.open(image, '_blank')}
+                  className={`project__img ${type}`}
+                />
               </div>
-           
+
             </div>
           </SwiperSlide>
         ))}
