@@ -1,19 +1,51 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
 
 const Contact = () => {
 
     const form = useRef();
+    const [isLoading, setIsLoading] = useState(false);
+    const [message, setMessage] = useState({ text: '', type: '' });
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setIsLoading(true);
+        setMessage({ text: '', type: '' });
 
         emailjs
             .sendForm('service_8c86w1f', 'template_pmds8g9', form.current, {
                 publicKey: 'P1jCcOnVZd-fKZGwb',
             })
-        e.target.reset();
+            .then(
+                (result) => {
+                    console.log('SUCCESS!', result.text);
+                    setMessage({
+                        text: 'Message sent successfully! I will get back to you soon. 🎉',
+                        type: 'success'
+                    });
+                    e.target.reset();
+                    setIsLoading(false);
+
+                    // Clear message after 5 seconds
+                    setTimeout(() => {
+                        setMessage({ text: '', type: '' });
+                    }, 5000);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    setMessage({
+                        text: 'Failed to send message. Please try again or contact me directly via email. ❌',
+                        type: 'error'
+                    });
+                    setIsLoading(false);
+
+                    // Clear error message after 5 seconds
+                    setTimeout(() => {
+                        setMessage({ text: '', type: '' });
+                    }, 5000);
+                },
+            );
     };
     return (
         <section className="contact section" id="contact">
@@ -69,21 +101,55 @@ const Contact = () => {
                 </div>
                 <div className="contact__content">
                     <h3 className="contact__title">A short message for me</h3>
+
+                    {/* Status Message */}
+                    {message.text && (
+                        <div className={`contact__message ${message.type === 'success' ? 'contact__message-success' : 'contact__message-error'}`}>
+                            {message.text}
+                        </div>
+                    )}
+
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Name</label>
-                            <input type="text" name='name' className='contact__form-input' placeholder='Insert your name' />
+                            <input
+                                type="text"
+                                name='name'
+                                className='contact__form-input'
+                                placeholder='Insert your name'
+                                required
+                                disabled={isLoading}
+                            />
                         </div>
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Email</label>
-                            <input type="email" name='email' className='contact__form-input' placeholder='Insert your email' />
+                            <input
+                                type="email"
+                                name='email'
+                                className='contact__form-input'
+                                placeholder='Insert your email'
+                                required
+                                disabled={isLoading}
+                            />
                         </div>
                         <div className="contact__form-div contact__form-area">
                             <label htmlFor="" className="contact__form-tag">Message</label>
-                            <textarea name="project" cols="30" rows="10" className='contact__form-input' placeholder='Your message'></textarea>
+                            <textarea
+                                name="project"
+                                cols="30"
+                                rows="10"
+                                className='contact__form-input'
+                                placeholder='Your message'
+                                required
+                                disabled={isLoading}
+                            ></textarea>
                         </div>
-                        <button className="button button--flex">
-                            Send Message
+                        <button
+                            type="submit"
+                            className="button button--flex"
+                            disabled={isLoading}
+                        >
+                            {isLoading ? 'Sending...' : 'Send Message'}
                             <svg
                                 class="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"

@@ -28,7 +28,7 @@ const Footer = () => {
                         <i className="bx bxl-twitter"></i>
                     </a>
                 </div>
-                <span className='footer__copy'>&#169; TechCare. All right reserved</span>
+                <span className='footer__copy'>&#169; 2024-{new Date().getFullYear()} TechCare Consulting. All rights reserved</span>
             </div>
         </footer>
     )

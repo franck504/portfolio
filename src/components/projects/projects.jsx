@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import { Data } from './Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -9,10 +8,32 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
 const Projects = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  const handleTabClick = (index) => {
+    if (swiperRef) {
+      swiperRef.slideToLoop(index);
+    }
+  };
+
   return (
     <section className="projects container__project section" id="projects">
       <h2 className="section__title">Projects</h2>
       <span className="section__subtitle__project">My few accomplishments</span>
+
+      {/* Project Tabs Navigation */}
+      <div className="projects__tabs">
+        {Data.map((project, index) => (
+          <button
+            key={project.id}
+            className={`projects__tab ${activeIndex === index ? 'projects__tab-active' : ''} `}
+            onClick={() => handleTabClick(index)}
+          >
+            {project.title}
+          </button>
+        ))}
+      </div>
 
       <Swiper
         className="projects__slider"
@@ -21,6 +42,8 @@ const Projects = () => {
         pagination={{ clickable: true }}
         spaceBetween={30}
         slidesPerView={1}
+        onSwiper={setSwiperRef}
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
         {Data.map(({ id, image, title, description, techno, type }) => (
           <SwiperSlide key={id}>
@@ -50,7 +73,7 @@ const Projects = () => {
                   src={image}
                   alt={title}
                   onClick={() => window.open(image, '_blank')}
-                  className={`project__img ${type}`}
+                  className={`project__img ${type} `}
                 />
               </div>
 

@@ -1,88 +1,157 @@
+/* ========== SKILLS SECTION - CARD GRID LAYOUT ========== */
+
 .skills__container {
-    grid-template-columns: repeat(2 , 350px);
-    column-gap: 3rem;
-    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .skills__content {
-background-color: var(--container-color);
-border: 1px solid rgba(0, 0, 0, 0.1);
-padding: 2rem 4rem;
-border-radius: 1.25rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
 }
 
 .skills__title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
     text-align: center;
-    margin-bottom: var(--mb-1-5);
+    margin-bottom: var(--mb-2);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+/* Skills Grid - Cards */
 .skills__box {
-    display: flex;
-    justify-content: center;
-    column-gap: 2.5rem;
-} 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
 .skills__group {
-    display: grid;
-    align-items: flex-start;
-    row-gap: 1rem;
+    display: contents;
 }
 
+/* Individual Skill Card */
 .skills__data {
-display: flex;
-column-gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    cursor: default;
+    gap: 0.75rem;
+}
 
+.skills__data:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    border-color: rgba(0, 0, 0, 0.15);
 }
 
 .skills .bx-badge-check {
-    font-size:  1rem;
+    font-size: 2.5rem;
     color: var(--title-color);
-} 
+    flex-shrink: 0;
+}
 
-.skills__name { 
+/* All other Boxicons */
+.skills__data i {
+    font-size: 2.5rem;
+    color: var(--title-color);
+    flex-shrink: 0;
+}
+
+.skills__name {
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    line-height: 18px;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    line-height: 1.3;
+    margin: 0;
 }
 
 .skills__level {
-    font-size: var(--tiny-font-size);
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 0.5rem;
 }
 
+/* ========== RESPONSIVE ========== */
 
-/* large devices */
+/* Large devices */
 @media screen and (max-width:992px) {
     .skills__container {
-        grid-template-columns: max-content;
-        row-gap: 2rem;
+        max-width: 750px;
     }
-  }
-  
-  
-  /* Medium devices */
-  @media screen and (max-width:768px) {
- 
-  }
-  
-  /* small devices */
-  @media screen and (max-width:576px) {
-    .skills__container {
-        grid-template-columns: 1fr;
-    }
-    .skills__content {
-        padding: 1.5rem;
-    }
-  }
-  
-  /* Smaller devices */
-  @media screen and (max-width:350px) {
-  
+
     .skills__box {
-        column-gap: 1.24rem;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
+}
+
+/* Medium devices */
+@media screen and (max-width:768px) {
+    .skills__container {
+        padding: 0 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .skills__box {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.875rem;
+    }
+
+    .skills__data {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* Small devices */
+@media screen and (max-width:576px) {
+    .skills__box {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .skills__data {
+        padding: 1rem 0.5rem;
+    }
+
+    .skills__data i {
+        font-size: 2rem;
+    }
+}
+
+/* Smaller devices */
+@media screen and (max-width:350px) {
+    .skills__box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .skills__name {
         font-size: var(--small-font-size);
     }
-  }
+
+    .skills__level {
+        font-size: var(--tiny-font-size);
+    }
+}
