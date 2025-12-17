@@ -51,42 +51,23 @@ const Qualification = () => {
               </div>
             </div>
 
-            {/* 2. Entrepreneurship Hackathon August 2022 */}
+            {/* 3. Entrepreneurship Hackathon August 2022 */}
             <div className="qualification__data">
-              <div></div>
-
               <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification__title">  Entrepreneurship Hackathon</h3>
+                <h3 className="qualification__title">Entrepreneurship Hackathon</h3>
                 <span className="qualification__subtitle">French Embassy : « Bien-être au travail grâce au digital »</span>
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i> Août 2022
                 </div>
               </div>
 
-            </div>
-
-            {/* 3. GDG Mahajanga Since 2022 */}
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Google Developer Group (GDG Mahajanga)</h3>
-                <span className="qualification__subtitle">Active Community Member
-                </span>
-                <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> Since 2022
-                </div>
-              </div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
             </div>
 
-            {/* 4. Hackathon 2nd Place */}
+            {/* 4. GDG Mahajanga Since 2022 */}
             <div className="qualification__data">
               <div></div>
 
@@ -96,29 +77,45 @@ const Qualification = () => {
               </div>
 
               <div>
-                <h3 className="qualification__title">
-                  Hackathon: 2nd Place</h3>
-                <span className="qualification__subtitle">« Design of a Mobile Social Network Application for Real-Time Photo Editing  (Flutter-Python)»</span>
+                <h3 className="qualification__title">Google Developer Group (GDG Mahajanga)</h3>
+                <span className="qualification__subtitle">Active Community Member</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i>1st Edition Hackathon, Mahajanga
+                  <i className="uil uil-calender-alt"></i> Since 2022
                 </div>
               </div>
             </div>
 
-            {/* 5. Entrepreneurship Hackathon December 2021 - OLDEST */}
+            {/* 5. Hackathon 2nd Place */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">
-                  Entrepreneurship Hackathon</h3>
-                <span className="qualification__subtitle">French Embassy: « Ville verte grâce au digital »</span>
+                <h3 className="qualification__title">Hackathon: 2nd Place</h3>
+                <span className="qualification__subtitle">« Design of a Mobile Social Network Application for Real-Time Photo Editing  (Flutter-Python)»</span>
                 <div className="qualification__calender">
-                  <i className="uil uil-calender-alt"></i> December 2021
+                  <i className="uil uil-calender-alt"></i>1st Edition Hackathon, Mahajanga
                 </div>
               </div>
 
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
+              </div>
+            </div>
+
+            {/* 6. Entrepreneurship Hackathon December 2021 - OLDEST */}
+            <div className="qualification__data">
+              <div></div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+
+              <div>
+                <h3 className="qualification__title">Entrepreneurship Hackathon</h3>
+                <span className="qualification__subtitle">French Embassy: « Ville verte grâce au digital »</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calender-alt"></i> December 2021
+                </div>
               </div>
             </div>
           </div>
