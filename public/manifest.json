@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Franck Portfolio",
+  "name": "Franck ANDRINIAVO - Full Stack Developer Portfolio",
+  "description": "Portfolio of Franck ANDRINIAVO, Full Stack Developer specializing in Flutter, React, Python, and IoT",
   "icons": [
     {
       "src": "favicon.ico",
