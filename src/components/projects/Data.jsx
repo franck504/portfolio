@@ -5,8 +5,23 @@ import Image4 from "../../assets/jobFinder.gif";
 import Image5 from "../../assets/csao.gif";
 import Image6 from "../../assets/diamon.gif";
 import Image7 from "../../assets/saveat.gif";
+import Image8 from "../../assets/entrelles.gif";
 
 export const Data = [
+  {
+    id: 8,
+    image: Image8,
+    title: "Entrelles",
+    description:
+      "Application mobile de covoiturage feminine, proposition et reservation, la conductrice recoit de l'argent , le voyageur paye via carte VISA, le plateforme prend sa commision",
+    techno: ["Flutter", "Stripe", "KYC", "Checkout", "Webview", "Webhooks", "NodeJS", "Express", "MongoDB", "Deeplink", "REST API", "Swagger", "Cloudinary", "Google Maps", "Gemini API"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
+    },
+    type: "Mobile"
+  },
   {
     id: 7,
     image: Image7,
