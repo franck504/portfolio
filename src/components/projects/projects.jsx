@@ -18,7 +18,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="projects container__project section" id="projects">
+    <section className="projects section" id="projects">
       <h2 className="section__title">Projects</h2>
       <span className="section__subtitle__project">My few accomplishments</span>
 
@@ -28,6 +28,7 @@ const Projects = () => {
           <button
             key={project.id}
             className={`projects__tab ${activeIndex === index ? 'projects__tab-active' : ''} `}
+            style={activeIndex === index ? { backgroundColor: project.color, borderColor: project.color, color: '#fff' } : {}}
             onClick={() => handleTabClick(index)}
           >
             {project.title}
@@ -37,6 +38,7 @@ const Projects = () => {
 
       <Swiper
         className="projects__slider"
+        style={{ '--project-color': Data[activeIndex]?.color || 'var(--title-color)' }}
         modules={[Navigation, Pagination]}
         navigation
         pagination={{ clickable: true }}
@@ -45,14 +47,23 @@ const Projects = () => {
         onSwiper={setSwiperRef}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
-        {Data.map(({ id, image, title, description, techno, type }) => (
+        {Data.map(({ id, image, title, description, techno, type, logo, color }) => (
           <SwiperSlide key={id}>
-            <div className="project__card" id='carte'>
+            <div className="project__card" id='carte' style={{ '--project-color': color }}>
 
               <div className="project__content">
                 <div className="project__header">
-                  <h3 className="project__title">{title}</h3>
-                  <span className="project__type">{type}</span>
+                  {logo ? (
+                    <img src={logo} alt={`${title} logo`} className="project__logo" />
+                  ) : (
+                    <div className="project__logo-fallback">
+                      {title.charAt(0)}
+                    </div>
+                  )}
+                  <div className="project__title-box">
+                    <h3 className="project__title">{title}</h3>
+                    <span className="project__type">{type}</span>
+                  </div>
                 </div>
                 <p className="project__description">{description}</p>
 

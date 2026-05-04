@@ -6,8 +6,31 @@ import Image5 from "../../assets/csao.gif";
 import Image6 from "../../assets/diamon.gif";
 import Image7 from "../../assets/saveat.gif";
 import Image8 from "../../assets/entrelles.gif";
+import Logo1 from "../../assets/icon_app/tenimparitra.png";
+import Logo2 from "../../assets/icon_app/tanalahy.png";
+import Logo6 from "../../assets/icon_app/diamon.png";
+import Logo7 from "../../assets/icon_app/saveat.png";
+import Logo8 from "../../assets/icon_app/entrelles.png";
+import ImageCutisia from "../../assets/cutisia.gif";
+import LogoCutisia from "../../assets/icon_app/cutisia.png";
 
 export const Data = [
+  {
+    id: 9,
+    image: ImageCutisia,
+    title: "Cutisia",
+    description:
+      "Intelligent medical assistant capable of detecting 6 tropical skin diseases (Leprosy, Monkeypox, etc.) in real-time on smartphones. An Edge-to-Cloud project combining high precision and offline accessibility for rural areas using Deep Learning.",
+    techno: ["Flutter", "TensorFlow", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
+    },
+    type: "Mobile / DL",
+    logo: LogoCutisia,
+    color: "#1966fa"
+  },
   {
     id: 8,
     image: Image8,
@@ -20,7 +43,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: Logo8,
+    color: "#eb026d"
   },
   {
     id: 7,
@@ -34,7 +59,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Desktop"
+    type: "Desktop",
+    logo: Logo7,
+    color: "#09182b"
   },
   {
 
@@ -49,12 +76,14 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: Logo6,
+    color: "#206de8"
   },
   {
     id: 1,
     image: Image1,
-    title: "Tenimparitra Malagasy",
+    title: "Tenimparitra",
     description:
       "An application that is both a dictionary and a social network for Malagasy dialects.",
     techno: ["Flutter", "ExpressJS", "Neo4j"],
@@ -63,7 +92,10 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: Logo1,
+
+    color: "#057509"
   },
   {
     id: 2,
@@ -77,7 +109,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: Logo2,
+    color: "#4c326f"
   },
   {
     id: 5,
@@ -91,7 +125,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: null,
+    color: "var(--title-color)"
   },
   {
     id: 4,
@@ -105,7 +141,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: null,
+    color: "var(--title-color)"
   },
   {
     id: 3,
@@ -119,7 +157,9 @@ export const Data = [
       appleStore: "https://appleStore.com/",
       googlePlay: "https://play.google.com/"
     },
-    type: "Mobile"
+    type: "Mobile",
+    logo: null,
+    color: "var(--title-color)"
   },
 
 

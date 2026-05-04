@@ -9,6 +9,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0% );
   --text-color: hsl(var(--hue), var(--sat), 46% );
   --body-color: hsl(var(--hue), var(--sat), 98% );
+  --body-color-alt: hsl(var(--hue), var(--sat), 96% );
   --container-color: #fff;
   --body-font : "Poppins" ,sans-serif;
 
@@ -101,6 +102,10 @@ img{
 
 .section {
   padding: 6rem 0 2rem;
+}
+
+.main section:nth-of-type(even) {
+  background-color: var(--body-color-alt);
 }
 
 .section__title {
