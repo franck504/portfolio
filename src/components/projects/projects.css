@@ -341,7 +341,7 @@
 /* ========== RESPONSIVE - MOBILE ========== */
 @media screen and (max-width: 768px) {
   .projects__tabs {
-    padding: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   }
 
   .projects__tab {
@@ -498,7 +498,7 @@
   overflow: hidden !important; 
   height: auto !important;
   min-height: auto !important;
-  padding: 1rem 0 !important;
+  padding: 1rem 1.5rem !important; /* Ajout d'un padding gauche/droite par défaut */
   position: relative;
 }
 
