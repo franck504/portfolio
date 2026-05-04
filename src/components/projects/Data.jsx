@@ -18,7 +18,7 @@ export const Data = [
   {
     id: 9,
     image: ImageCutisia,
-    title: "Cutisia",
+    title: "CutisIA",
     description:
       "Intelligent medical assistant capable of detecting 6 tropical skin diseases (Leprosy, Monkeypox, etc.) in real-time on smartphones. An Edge-to-Cloud project combining high precision and offline accessibility for rural areas using Deep Learning.",
     techno: ["Flutter", "TensorFlow", "TensorFlow-Lite", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite"],
