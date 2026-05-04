@@ -376,8 +376,15 @@
   }
 
   .project__header {
+    flex-direction: column;
     justify-content: center;
+    gap: 1rem;
     width: 100%;
+  }
+
+  .project__title-box {
+    align-items: center;
+    flex: none;
   }
 
   .project__title {
