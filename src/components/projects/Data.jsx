@@ -21,7 +21,7 @@ export const Data = [
     title: "Cutisia",
     description:
       "Intelligent medical assistant capable of detecting 6 tropical skin diseases (Leprosy, Monkeypox, etc.) in real-time on smartphones. An Edge-to-Cloud project combining high precision and offline accessibility for rural areas using Deep Learning.",
-    techno: ["Flutter", "TensorFlow", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite"],
+    techno: ["Flutter", "TensorFlow", "TensorFlow-Lite", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
