@@ -22,7 +22,7 @@ export const Data = [
     image: ImageToroteny,
     title: "Toroteny",
     description: "The leading NLP engine for the Malagasy language. Hybrid model (FastText Word Embeddings + probabilistic N-Grams) trained on over 1 million sentences. Offers semantic analysis and lexical prediction capabilities.",
-    techno: ["Python", "FastText", "NLP", "Machine Learning", "N-Grams", "Data Science", "Scrappeing"],
+    techno: ["Python", "FastText", "NLP", "Machine Learning", "N-Grams", "Data Science", "Scrapping"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
