@@ -21,7 +21,7 @@ export const Data = [
     id: 10,
     image: ImageToroteny,
     title: "Toroteny🇲🇬",
-    description: "The leading NLP engine for the Malagasy language. Hybrid model (FastText Word Embeddings + probabilistic N-Grams) trained on over 1 million sentences. Offers semantic analysis and lexical prediction capabilities.",
+    description: "The leading NLP engine for the Malagasy language. Hybrid model (FastText Word Embeddings + probabilistic N-Grams) trained on over 1 million sentences. Offers semantic analysis and lexical prediction capabilities. \n Try it at : https://huggingface.co/spaces/Franck504/TorotenyMalagasy",
     techno: ["Python", "FastText", "NLP", "Machine Learning", "N-Grams", "Data Science", "Scrapping"],
     links: {
       github: "https://github.com/f504",
@@ -37,8 +37,8 @@ export const Data = [
     image: ImageCutisia,
     title: "CutisIA",
     description:
-      "Intelligent medical assistant capable of detecting 6 tropical skin diseases (Leprosy, Monkeypox, etc.) in real-time on smartphones. An Edge-to-Cloud project combining high precision and offline accessibility for rural areas using Deep Learning.",
-    techno: ["Flutter", "TensorFlow", "TensorFlow-Lite", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite"],
+      "Intelligent medical assistant capable of detecting 6 tropical skin diseases (Leprosy, Monkeypox, etc.) in real-time on smartphones. An Edge-to-Cloud project combining high precision and offline accessibility for rural areas using Deep Learning. Try it at : https://huggingface.co/spaces/Franck504/cutisia_HF",
+    techno: ["CNN", "EfficientNetV2-L", "U-Net", "TFLite", "FastAPI", "OpenCV", "Grad-CAM", "XAI", "Python", "SQLite", "CRISP-DM", "Flutter", "TensorFlow", "TensorFlow-Lite"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
