@@ -71,7 +71,7 @@ export const Data = [
     title: "VakiBot",
     description:
       "Docker-first legal RAG assistant designed to answer questions strictly from uploaded legal documents. Features a FastAPI backend, ChromaDB for vector storage, and Groq LLM for generation with hybrid search and hallucination guardrails. Built for CPU-only environments via Docker Compose.",
-    techno: ["Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "LangChain", "BM25", "Jina Embeddings"],
+    techno: ["Langchain","Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "BM25", "Jina Embeddings"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
