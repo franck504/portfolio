@@ -70,7 +70,7 @@ export const Data = [
     image: ImageVakibot,
     title: "VakiBot",
     description:
-      "VakiBot is a  RAG assistant that answers questions from uploaded documents with cited, source-grounded responses. It processes PDF/DOCX/TXT files, stores embeddings in ChromaDB, and uses vector or hybrid BM25 retrieval before generation with a Groq LLM. Built for CPU-only environments, it includes guardrails to reduce hallucinations and is easy to run with Docker Compose.",
+      "VakiBot is a  RAG assistant that answers questions from uploaded documents with cited, source-grounded responses. It processes PDF/DOCX/TXT files, stores embeddings in ChromaDB, and uses vector or hybrid BM25 retrieval before generation with a Groq LLM. It includes guardrails to reduce hallucinations and is easy to run with Docker Compose.",
     techno: ["Langchain","Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "BM25", "Jina Embeddings"],
     links: {
       github: "https://github.com/f504",
