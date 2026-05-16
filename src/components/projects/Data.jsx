@@ -15,10 +15,11 @@ import ImageCutisia from "../../assets/cutisia.gif";
 import LogoCutisia from "../../assets/icon_app/cutisia.png";
 import ImageToroteny from "../../assets/toroteny.gif";
 import LogoToroteny from "../../assets/icon_app/toroteny.png";
+import ImageVakibot from "../../assets/vakibot.gif";
 
 export const Data = [
   {
-    id: 10,
+    id: 11,
     image: ImageToroteny,
     title: "Toroteny🇲🇬",
     description: "The leading NLP engine for the Malagasy language. Hybrid model (FastText Word Embeddings + probabilistic N-Grams) trained on over 1 million sentences. Offers semantic analysis and lexical prediction capabilities. \n Try it at : https://huggingface.co/spaces/Franck504/TorotenyMalagasy",
@@ -33,7 +34,7 @@ export const Data = [
     color: "#027929"
   },
   {
-    id: 9,
+    id: 10,
     image: ImageCutisia,
     title: "CutisIA",
     description:
@@ -49,7 +50,7 @@ export const Data = [
     color: "#1966fa"
   },
   {
-    id: 8,
+    id: 9,
     image: Image8,
     title: "Entrelles",
     description:
@@ -63,6 +64,22 @@ export const Data = [
     type: "Mobile",
     logo: Logo8,
     color: "#eb026d"
+  },
+  {
+    id: 8,
+    image: ImageVakibot,
+    title: "VakiBot",
+    description:
+      "Docker-first legal RAG assistant designed to answer questions strictly from uploaded legal documents. Features a FastAPI backend, ChromaDB for vector storage, and Groq LLM for generation with hybrid search and hallucination guardrails. Built for CPU-only environments via Docker Compose.",
+    techno: ["Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "LangChain", "BM25", "Jina Embeddings"],
+    links: {
+      github: "https://github.com/f504",
+      appleStore: "https://appleStore.com/",
+      googlePlay: "https://play.google.com/"
+    },
+    type: "RAG",
+    logo: null,
+    color: "#1a365d"
   },
   {
     id: 7,
