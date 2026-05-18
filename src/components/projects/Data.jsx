@@ -23,7 +23,7 @@ export const Data = [
     image: ImageToroteny,
     title: "Toroteny🇲🇬",
     description: "The leading NLP engine for the Malagasy language. Hybrid model (FastText Word Embeddings + probabilistic N-Grams) trained on over 1 million sentences. Offers semantic analysis and lexical prediction capabilities. \n Try it at : https://huggingface.co/spaces/Franck504/TorotenyMalagasy",
-    techno: ["Python", "FastText", "NLP", "Machine Learning", "N-Grams", "Data Science", "Scrapping"],
+    techno: ["Python", "NLP", "Machine Learning", "FastText", "N-Grams", "Levenshtein", "Data Science", "Scrapping"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",
@@ -71,7 +71,7 @@ export const Data = [
     title: "VakiBot",
     description:
       "VakiBot is a  RAG assistant that answers questions from uploaded documents with cited, source-grounded responses. It processes PDF/DOCX/TXT files, stores embeddings in ChromaDB, and uses vector or hybrid BM25 retrieval before generation with a Groq LLM. It includes guardrails to reduce hallucinations and is easy to run with Docker Compose.",
-    techno: ["Langchain","Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "BM25", "Jina Embeddings"],
+    techno: ["Langchain", "Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "BM25", "Jina Embeddings"],
     links: {
       github: "https://github.com/f504",
       appleStore: "https://appleStore.com/",

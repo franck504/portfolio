@@ -55,6 +55,20 @@ const Environment = () => {
                             <span className="skills__level">1 Year</span>
                         </div>
                     </div>
+                    <div className="skills__data">
+                        <i className="bx bx-bar-chart-alt-2"></i>
+                        <div>
+                            <h3 className="skills__name">Kaggle</h3>
+                            <span className="skills__level">1 Year</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bxl-google"></i>
+                        <div>
+                            <h3 className="skills__name">Google Colab</h3>
+                            <span className="skills__level">1 Year</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

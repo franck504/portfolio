@@ -10,21 +10,21 @@ const Database = () => {
                         <i className="bx bx-data"></i>
                         <div>
                             <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="bx bxl-mongodb"></i>
                         <div>
                             <h3 className="skills__name">MongoDB</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <span className="skills__level">Advanced</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="bx bxl-firebase"></i>
                         <div>
                             <h3 className="skills__name">Firebase</h3>
-                            <span className="skills__level">Basic</span>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                     <div className="skills__data">
@@ -39,6 +39,20 @@ const Database = () => {
                         <div>
                             <h3 className="skills__name">RethinkDB</h3>
                             <span className="skills__level">Advanced</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-data"></i>
+                        <div>
+                            <h3 className="skills__name">InfluxDB</h3>
+                            <span className="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-server"></i>
+                        <div>
+                            <h3 className="skills__name">ChromaDB</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
                 </div>
