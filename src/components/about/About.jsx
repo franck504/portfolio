@@ -3,24 +3,27 @@ import './about.css'
 import AboutImg from '../../assets/me-removebg-preview.png'
 import CV from '../../assets/CV-Franck.pdf'
 import Info from './Info'
+import { useLanguage } from '../../context/LanguageContext'
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <h2 className="section__title">{t.about.title}</h2>
+      <span className="section__subtitle">{t.about.subtitle}</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img src={AboutImg} alt="Franck ANDRINIAVO" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            I dedicate my strengths and skills to designing and developing features that bring a product to life, fully meeting a client's needs, while being able to collaborate effectively within a team to achieve this goal.
+            {t.about.description}
           </p>
           <Info />
           <a download="" href={CV} className="button button--flex">
-            Download CV
+            {t.about.downloadCv}
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

@@ -9,10 +9,11 @@ import Projects from './components/projects/projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Scrollup from './components/scrollup/Scrollup';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
-    <>
+    <LanguageProvider>
       <Header />
       <main className='main'>
         <Home />
@@ -26,8 +27,7 @@ function App() {
 
       <Footer />
       <Scrollup />
-
-    </>
+    </LanguageProvider>
   );
 }
 

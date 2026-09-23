@@ -1,6 +1,11 @@
+# Robots.txt - Franck ANDRINIAVO Portfolio
 # https://www.robotstxt.org/robotstxt.html
+
 User-agent: *
 Allow: /
+
+# Disallow internal build artifacts (CRA)
+Disallow: /static/
 
 # Sitemap
 Sitemap: https://franck.vercel.app/sitemap.xml

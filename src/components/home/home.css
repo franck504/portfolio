@@ -65,7 +65,7 @@ margin-bottom: var(--mb-3);
 }
 
 .home__img {
-    background: url(../../assets//sary_tapaka.JPG );
+    background: url(../../assets/sary_tapaka.JPG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,8 +124,11 @@ margin-bottom: var(--mb-3);
     0% {
         transform: translateY(0);
     } 
-    0% {
-        transform: translateY(3.75rem);
+    50% {
+        transform: translateY(2.5rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 

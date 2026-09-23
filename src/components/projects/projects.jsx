@@ -6,8 +6,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Projects = () => {
+  const { language, t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -19,14 +21,15 @@ const Projects = () => {
 
   return (
     <section className="projects section" id="projects">
-      <h2 className="section__title">Projects</h2>
-      <span className="section__subtitle__project">My few accomplishments</span>
+      <h2 className="section__title">{t.projects.title}</h2>
+      <span className="section__subtitle__project">{t.projects.subtitle}</span>
 
       {/* Project Tabs Navigation */}
       <div className="projects__tabs">
         {Data.map((project, index) => (
           <button
             key={project.id}
+            type="button"
             className={`projects__tab ${activeIndex === index ? 'projects__tab-active' : ''} `}
             style={activeIndex === index ? { backgroundColor: project.color, borderColor: project.color, color: '#fff' } : {}}
             onClick={() => handleTabClick(index)}
@@ -47,50 +50,53 @@ const Projects = () => {
         onSwiper={setSwiperRef}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
       >
-        {Data.map(({ id, image, title, description, techno, type, logo, color }) => (
-          <SwiperSlide key={id}>
-            <div className="project__card" id='carte' style={{ '--project-color': color }}>
+        {Data.map(({ id, image, title, description, techno, type, logo, color }) => {
+          const descText = typeof description === 'object' ? (description[language] || description.en) : description;
+          return (
+            <SwiperSlide key={id}>
+              <div className="project__card" id='carte' style={{ '--project-color': color }}>
 
-              <div className="project__content">
-                <div className="project__header">
-                  {logo ? (
-                    <img src={logo} alt={`${title} logo`} className="project__logo" />
-                  ) : (
-                    <div className="project__logo-fallback">
-                      {title.charAt(0)}
+                <div className="project__content">
+                  <div className="project__header">
+                    {logo ? (
+                      <img src={logo} alt={`${title} logo`} className="project__logo" />
+                    ) : (
+                      <div className="project__logo-fallback">
+                        {title.charAt(0)}
+                      </div>
+                    )}
+                    <div className="project__title-box">
+                      <h3 className="project__title">{title}</h3>
+                      <span className="project__type">{type}</span>
                     </div>
-                  )}
-                  <div className="project__title-box">
-                    <h3 className="project__title">{title}</h3>
-                    <span className="project__type">{type}</span>
+                  </div>
+                  <p className="project__description">{descText}</p>
+
+                  <div className="project__techno">
+                    <strong>{t.projects.technoLabel}</strong>
+                    <div className="techno__container">
+                      {techno.map((tech, index) => (
+                        <span key={index} className="techno__badge">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <p className="project__description">{description}</p>
 
-                <div className="project__techno">
-                  <strong>Technologies</strong>
-                  <div className="techno__container">
-                    {techno.map((tech, index) => (
-                      <span key={index} className="techno__badge">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <div className="project__image">
+                  <img
+                    src={image}
+                    alt={title}
+                    onClick={() => window.open(image, '_blank')}
+                    className={`project__img ${type} `}
+                  />
                 </div>
-              </div>
 
-              <div className="project__image">
-                <img
-                  src={image}
-                  alt={title}
-                  onClick={() => window.open(image, '_blank')}
-                  className={`project__img ${type} `}
-                />
               </div>
-
-            </div>
-          </SwiperSlide>
-        ))}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </section>
   );

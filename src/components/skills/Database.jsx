@@ -1,58 +1,61 @@
 import React from 'react'
+import { useLanguage } from '../../context/LanguageContext'
 
 const Database = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Database</h3>
+            <h3 className="skills__title">{t.skills.database}</h3>
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i className="bx bx-data"></i>
+                        <i className="bx bxl-postgresql"></i>
                         <div>
-                            <h3 className="skills__name">MySQL</h3>
-                            <span className="skills__level">Advanced</span>
+                            <h3 className="skills__name">PostgreSQL</h3>
+                            <span className="skills__level">{t.skills.levels.advanced}</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="bx bxl-mongodb"></i>
                         <div>
                             <h3 className="skills__name">MongoDB</h3>
-                            <span className="skills__level">Advanced</span>
-                        </div>
-                    </div>
-                    <div className="skills__data">
-                        <i className="bx bxl-firebase"></i>
-                        <div>
-                            <h3 className="skills__name">Firebase</h3>
-                            <span className="skills__level">Intermediate</span>
-                        </div>
-                    </div>
-                    <div className="skills__data">
-                        <i className="bx bx-network-chart"></i>
-                        <div>
-                            <h3 className="skills__name">Neo4j</h3>
-                            <span className="skills__level">Advanced</span>
+                            <span className="skills__level">{t.skills.levels.advanced}</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="bx bx-server"></i>
                         <div>
-                            <h3 className="skills__name">RethinkDB</h3>
-                            <span className="skills__level">Advanced</span>
+                            <h3 className="skills__name">ChromaDB (Vector)</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
                         </div>
                     </div>
                     <div className="skills__data">
                         <i className="bx bx-data"></i>
                         <div>
-                            <h3 className="skills__name">InfluxDB</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">MySQL / SQLite</h3>
+                            <span className="skills__level">{t.skills.levels.advanced}</span>
                         </div>
                     </div>
                     <div className="skills__data">
-                        <i className="bx bx-server"></i>
+                        <i className="bx bxl-firebase"></i>
                         <div>
-                            <h3 className="skills__name">ChromaDB</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Firebase Firestore</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-network-chart"></i>
+                        <div>
+                            <h3 className="skills__name">Neo4j (Graph)</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-data"></i>
+                        <div>
+                            <h3 className="skills__name">InfluxDB (Time Series)</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
                         </div>
                     </div>
                 </div>

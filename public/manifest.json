@@ -1,7 +1,8 @@
 {
   "short_name": "Franck Portfolio",
-  "name": "Franck ANDRINIAVO - Full Stack Developer Portfolio",
-  "description": "Portfolio of Franck ANDRINIAVO, Full Stack Developer specializing in Flutter, React, Python, and IoT",
+  "name": "Franck ANDRINIAVO — Développeur Mobile, IA & IoT",
+  "description": "Portfolio de Franck ANDRINIAVO, développeur Full Stack spécialisé en Flutter, React, Python, IA/LLM et IoT. Basé à Madagascar.",
+  "lang": "fr",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,16 +12,21 @@
     {
       "src": "logo192.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#0070f3",
+  "background_color": "#ffffff",
+  "categories": ["portfolio", "technology", "developer"]
 }

@@ -1,9 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import "./contact.css"
+import "./contact.css";
+import { useLanguage } from '../../context/LanguageContext';
 
 const Contact = () => {
-
+    const { t } = useLanguage();
     const form = useRef();
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState({ text: '', type: '' });
@@ -21,7 +22,7 @@ const Contact = () => {
                 (result) => {
                     console.log('SUCCESS!', result.text);
                     setMessage({
-                        text: 'Message sent successfully! I will get back to you soon. 🎉',
+                        text: t.contact.successMsg,
                         type: 'success'
                     });
                     e.target.reset();
@@ -35,7 +36,7 @@ const Contact = () => {
                 (error) => {
                     console.log('FAILED...', error.text);
                     setMessage({
-                        text: 'Failed to send message. Please try again or contact me directly via email. ❌',
+                        text: t.contact.errorMsg,
                         type: 'error'
                     });
                     setIsLoading(false);
@@ -47,13 +48,14 @@ const Contact = () => {
                 },
             );
     };
+
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact Me</span>
+            <h2 className="section__title">{t.contact.title}</h2>
+            <span className="section__subtitle">{t.contact.subtitle}</span>
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to Me</h3>
+                    <h3 className="contact__title">{t.contact.talkToMe}</h3>
                     <div className="contact__info">
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
@@ -65,42 +67,39 @@ const Contact = () => {
                                 rel="noopener noreferrer"
                                 className="contact__button"
                             >
-                                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                {t.contact.writeMe} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
-
-
                         </div>
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon"></i>
-                            <h3 className="contact__card-title">Whatsapp</h3>
+                            <h3 className="contact__card-title">WhatsApp</h3>
                             <span className="contact__card-data">+261 32 40 260 38</span>
                             <a
-                                href="https://wa.me/261324026038?text=Hello%20I%20would%20like%20to%20contact%20you"
+                                href="https://wa.me/261324026038?text=Hello%20Franck%2C%20I%20would%20like%20to%20get%20in%20touch"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="contact__button"
                             >
-                                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                {t.contact.writeMe} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
                         <div className="contact__card">
                             <i className="bx bxl-messenger contact__card-icon"></i>
                             <h3 className="contact__card-title">Messenger</h3>
                             <span className="contact__card-data">franck.anselme</span>
-                            {/* https://www.facebook.com/messages/e2ee/t/8284951788203492 */}
                             <a
                                 href="https://www.facebook.com/franck.anselme.9"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="contact__button"
                             >
-                                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                {t.contact.writeMe} <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div className="contact__content">
-                    <h3 className="contact__title">A short message for me</h3>
+                    <h3 className="contact__title">{t.contact.formTitle}</h3>
 
                     {/* Status Message */}
                     {message.text && (
@@ -111,35 +110,38 @@ const Contact = () => {
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label htmlFor="" className="contact__form-tag">Name</label>
+                            <label htmlFor="contact-name" className="contact__form-tag">{t.contact.nameLabel}</label>
                             <input
+                                id="contact-name"
                                 type="text"
                                 name='name'
                                 className='contact__form-input'
-                                placeholder='Insert your name'
+                                placeholder={t.contact.namePlaceholder}
                                 required
                                 disabled={isLoading}
                             />
                         </div>
                         <div className="contact__form-div">
-                            <label htmlFor="" className="contact__form-tag">Email</label>
+                            <label htmlFor="contact-email" className="contact__form-tag">{t.contact.emailLabel}</label>
                             <input
+                                id="contact-email"
                                 type="email"
                                 name='email'
                                 className='contact__form-input'
-                                placeholder='Insert your email'
+                                placeholder={t.contact.emailPlaceholder}
                                 required
                                 disabled={isLoading}
                             />
                         </div>
                         <div className="contact__form-div contact__form-area">
-                            <label htmlFor="" className="contact__form-tag">Message</label>
+                            <label htmlFor="contact-message" className="contact__form-tag">{t.contact.messageLabel}</label>
                             <textarea
+                                id="contact-message"
                                 name="project"
                                 cols="30"
                                 rows="10"
                                 className='contact__form-input'
-                                placeholder='Your message'
+                                placeholder={t.contact.messagePlaceholder}
                                 required
                                 disabled={isLoading}
                             ></textarea>
@@ -149,9 +151,9 @@ const Contact = () => {
                             className="button button--flex"
                             disabled={isLoading}
                         >
-                            {isLoading ? 'Sending...' : 'Send Message'}
+                            {isLoading ? t.contact.sendingBtn : t.contact.sendBtn}
                             <svg
-                                class="button__icon"
+                                className="button__icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
                                 height="24"
@@ -172,7 +174,7 @@ const Contact = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;
