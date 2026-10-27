@@ -1,8 +1,6 @@
 import Image1 from "../../assets/tenimparitra.gif";
 import Image2 from "../../assets/tanalahy.gif";
-import Image3 from "../../assets/kaly.gif";
 import Image4 from "../../assets/jobFinder.gif";
-import Image5 from "../../assets/csao.gif";
 import Image6 from "../../assets/diamon.gif";
 import Image7 from "../../assets/saveat.gif";
 import Image8 from "../../assets/entrelles.gif";
@@ -15,7 +13,7 @@ import ImageCutisia from "../../assets/cutisia.gif";
 import LogoCutisia from "../../assets/icon_app/cutisia.png";
 import ImageToroteny from "../../assets/toroteny.gif";
 import LogoToroteny from "../../assets/icon_app/toroteny.png";
-import ImageVakibot from "../../assets/vakibot.gif";
+import ImageSmartHome from "../../assets/smart_home.gif";
 
 export const Data = [
   {
@@ -59,16 +57,16 @@ export const Data = [
   },
   {
     id: 8,
-    image: ImageVakibot,
-    title: "VakiBot",
+    image: ImageSmartHome,
+    title: "Smart Home Digital Twin",
     description: {
-      en: "VakiBot is a RAG assistant that answers questions from uploaded documents (PDF/DOCX/TXT) with cited, source-grounded responses. It stores embeddings in ChromaDB and uses vector or hybrid BM25 retrieval before generation with a Groq LLM, with guardrails to reduce hallucinations.",
-      fr: "Assistant RAG intelligent répondant aux questions à partir de documents importés (PDF/DOCX/TXT) avec citations de sources. Stockage vectoriel dans ChromaDB, recherche hybride BM25, génération via LLM Groq et garde-fous anti-hallucination, déployé sous Docker Compose.",
+      en: "Full-scale Smart Home Digital Twin integrating IoT edge simulation (ESP32 / MicroPython), real-time FastAPI backend with MQTT & WebSockets, Flutter mobile application, and interactive Three.js 3D visualization. Features automated climate regulation, bidirectional physical/digital synchronization, and live weather API integration.",
+      fr: "Jumeau numérique complet d'habitat intelligent combinant simulation IoT (ESP32 / MicroPython), backend temps réel FastAPI avec MQTT & WebSockets, application mobile Flutter et visualiseur 3D interactif Three.js. Intègre régulation thermique intelligente, synchronisation bidirectionnelle physique/virtuel et données météo en direct.",
     },
-    techno: ["LangChain", "Docker", "FastAPI", "ChromaDB", "Groq LLM", "RAG", "Python", "BM25", "Jina Embeddings"],
-    type: "RAG",
+    techno: ["FastAPI", "Python", "MicroPython", "ESP32", "MQTT", "HiveMQ", "Websocket", "Flutter", "Riverpod", "React", "Three.js", "Docker", "REST API", "OpenWeatherMap API", "Wokwi"],
+    type: "Mobile",
     logo: null,
-    color: "#1a365d"
+    color: "#0f766e"
   },
   {
     id: 7,
@@ -123,19 +121,6 @@ export const Data = [
     color: "#4c326f"
   },
   {
-    id: 5,
-    image: Image5,
-    title: "CSAO",
-    description: {
-      en: "Operational equipment and attendance tracking application for the National Gendarmerie training center, allowing registration and archiving across all squadrons and platoons.",
-      fr: "Application de gestion pour centre d'instruction opérationnel de la Gendarmerie Nationale : enregistrement et archivage des présences et des équipements par escadron et peloton.",
-    },
-    techno: ["Flutter", "ExpressJS", "MySQL"],
-    type: "Mobile",
-    logo: null,
-    color: "var(--title-color)"
-  },
-  {
     id: 4,
     image: Image4,
     title: "Sample Login App",
@@ -148,17 +133,4 @@ export const Data = [
     logo: null,
     color: "var(--title-color)"
   },
-  {
-    id: 3,
-    image: Image3,
-    title: "Kaly",
-    description: {
-      en: "A fast food ordering and purchasing mobile application with catalog browsing, shopping cart, and Firebase backend.",
-      fr: "Application mobile de commande et de livraison rapide de repas avec catalogue de produits, panier et backend Firebase.",
-    },
-    techno: ["Flutter", "Firebase"],
-    type: "Mobile",
-    logo: null,
-    color: "var(--title-color)"
-  }
 ];
