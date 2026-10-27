@@ -31,6 +31,13 @@ const Environment = () => {
                         </div>
                     </div>
                     <div className="skills__data">
+                        <i className="bx bx-git-branch"></i>
+                        <div>
+                            <h3 className="skills__name">LangGraph</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
                         <i className="bx bx-chip"></i>
                         <div>
                             <h3 className="skills__name">Ollama</h3>
@@ -41,6 +48,13 @@ const Environment = () => {
                         <i className="bx bx-terminal"></i>
                         <div>
                             <h3 className="skills__name">Hugging Face</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-chip"></i>
+                        <div>
+                            <h3 className="skills__name">TensorFlow</h3>
                             <span className="skills__level">{t.skills.levels.intermediate}</span>
                         </div>
                     </div>

@@ -26,30 +26,36 @@ const Services = () => {
                 {t.services.viewMore}
                 <i className="uil uil-arrow-right services__button-icon"></i>
               </span>
-
-              <div className={activeModal === service.id ? "services__modal active-modal" : "services__modal"}>
-                <div className="services__modal-content">
-                  <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
-
-                  <h3 className="services__modal-title">{service.modalTitle}</h3>
-                  <p className="services__modal-description">
-                    {service.description}
-                  </p>
-
-                  <ul className="services__modal-services grid">
-                    {service.services.map((item, index) => (
-                      <li className="services__modal-service" key={index}>
-                        <i className="uil uil-check-circle services__modal-icon"></i>
-                        <p className="services__modal-info">{item}</p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         ))}
       </div>
+
+      {t.services.list.map((service) => (
+        <div
+          key={service.id}
+          className={activeModal === service.id ? "services__modal active-modal" : "services__modal"}
+          onClick={(e) => { if (e.target === e.currentTarget) toggleTab(0); }}
+        >
+          <div className="services__modal-content">
+            <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
+
+            <h3 className="services__modal-title">{service.modalTitle}</h3>
+            <p className="services__modal-description">
+              {service.description}
+            </p>
+
+            <ul className="services__modal-services grid">
+              {service.services.map((item, index) => (
+                <li className="services__modal-service" key={index}>
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
     </section>
   )
 }

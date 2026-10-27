@@ -59,6 +59,20 @@ const Tools = () => {
                         </div>
                     </div>
                     <div className="skills__data">
+                        <i className="bx bx-cloud"></i>
+                        <div>
+                            <h3 className="skills__name">Oracle Cloud</h3>
+                            <span className="skills__level">{t.skills.levels.years1}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
+                        <i className="bx bx-shield"></i>
+                        <div>
+                            <h3 className="skills__name">Tailscale</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
                         <i className="bx bx-cube-alt"></i>
                         <div>
                             <h3 className="skills__name">Kubernetes</h3>

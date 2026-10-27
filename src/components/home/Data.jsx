@@ -6,6 +6,7 @@ const Data = () => {
 
   return (
     <div className="home__data">
+        <h3 className="home__subtitle">{t.home.subtitle}</h3>
         <h1 className="home__title">
              {t.home.title}
             <svg
@@ -58,7 +59,6 @@ const Data = () => {
                   ></path>
                 </svg>
         </h1>
-        <h3 className="home__subtitle">{t.home.subtitle}</h3>
         <p className="home__description">{t.home.description}</p>
         <a href="#contact" className="button button--flex">
             {t.home.contactBtn}

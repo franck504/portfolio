@@ -31,6 +31,13 @@ const Database = () => {
                         </div>
                     </div>
                     <div className="skills__data">
+                        <i className="bx bx-server"></i>
+                        <div>
+                            <h3 className="skills__name">Qdrant (Vector)</h3>
+                            <span className="skills__level">{t.skills.levels.intermediate}</span>
+                        </div>
+                    </div>
+                    <div className="skills__data">
                         <i className="bx bx-data"></i>
                         <div>
                             <h3 className="skills__name">MySQL / SQLite</h3>

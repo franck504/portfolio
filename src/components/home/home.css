@@ -31,8 +31,21 @@ h1,h3 {
 }
 
 .home__title {
-    font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-25);
+    position: relative;
+    font-size: var(--h1-font-size);
+    padding-left: 5.4rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+}
+
+.home__title::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
 }
 
 .home__hand {
@@ -42,21 +55,9 @@ h1,h3 {
 }
 
 .home__subtitle {
-position: relative;
-font-size: var(--h3-font-size);
-padding-left: 5.4rem;
-font-weight: var(--font-normal);
-margin-bottom: var(--mb-1);
-}
-
-.home__subtitle::before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: var(--text-color);
-    left: 0;
-    top: 1rem;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: var(--mb-0-25);
 }
 
 .home__description {
@@ -156,14 +157,12 @@ margin-bottom: var(--mb-3);
     height: 26px;
     width: 26px;
    }
-   .home__subtitle {
+   .home__title {
     padding-left: 0;
     margin-bottom: var(--mb-1);
    }
-   .home__subtitle::before {
+   .home__title::before {
     display: none;
-    width: 42px;
-    top: 0.8rem;
    }
 
    .home__description {
@@ -187,7 +186,12 @@ margin-bottom: var(--mb-3);
   @media screen and (max-width:768px) {
 
     .home__title {
-        font-size: var(--h1-font-size);
+        font-size: var(--h3-font-size);
+        padding-left: 0;
+    }
+
+    .home__title::before {
+        display: none;
     }
 
     .home__content {
@@ -213,13 +217,6 @@ margin-bottom: var(--mb-3);
     }
 
     .home__scroll {display: none;}
-
-    .home__subtitle {
-        padding-left: 0;
-       }
-    .home__subtitle::before {
-        display: none;
-       }
   
   }
   
@@ -227,10 +224,10 @@ margin-bottom: var(--mb-3);
   /* Smaller devices */
   @media screen and (max-width:350px) {
 
-    .home__subtitle {
+    .home__title {
         padding-left: 0;
        }
-    .home__subtitle::before {
+    .home__title::before {
         display: none;
        }
  .home__img {
