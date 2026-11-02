@@ -14,7 +14,7 @@ const About = () => {
       <span className="section__subtitle">{t.about.subtitle}</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="Franck ANDRINIAVO" className="about__img" />
+        <img src={AboutImg} alt="Franck ANDRINIAVO" className="about__img" loading="lazy" decoding="async" />
         <div className="about__data">
           <p className="about__description">
             {t.about.description}

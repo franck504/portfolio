@@ -88,6 +88,8 @@ const Projects = () => {
                   <img
                     src={image}
                     alt={title}
+                    loading="lazy"
+                    decoding="async"
                     onClick={() => window.open(image, '_blank')}
                     className={`project__img ${type} `}
                   />
